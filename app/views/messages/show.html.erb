@@ -1,0 +1,22 @@
+<h1>View Message</h1>
+
+<!--%= @message.inspect %><br>-->
+<!--%= @message.sender.inspect %><br>-->
+<!--%= @message.recipient.inspect %><br>-->
+
+<table>
+  <tr>
+    <td><b>Sender:</b></td>
+    <td><%= @message.sender.email %></td>
+  </tr>
+
+  <tr>
+    <td><b>Recipient:</b></td>
+    <td><%= @message.recipient.email %></td>
+  </tr>
+
+  <tr>
+    <td><b>Message:</b></td>
+    <td><%= @message.msgText %></td>
+  </tr>
+</table>
